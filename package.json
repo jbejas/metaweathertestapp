@@ -4,11 +4,28 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "ios8": "react-native run-ios --simulator='iPhone 8'",
+    "iosx": "react-native run-ios --simulator='iPhone X'",
+    "android": "react-native run-android",
+    "prettier-watch": "onchange '**/*.js' -- prettier --write {{changed}}"
   },
   "dependencies": {
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "moment": "^2.24.0",
+    "native-base": "^2.11.0",
+    "prettier": "^1.16.4",
     "react": "16.6.3",
-    "react-native": "0.58.5"
+    "react-native": "0.58.5",
+    "react-native-easy-grid": "^0.2.0",
+    "react-native-elements": "^1.0.0",
+    "react-native-navigation": "^2.12.0",
+    "react-native-vector-icons": "^6.3.0"
   },
   "devDependencies": {
     "babel-core": "^7.0.0-bridge.0",
